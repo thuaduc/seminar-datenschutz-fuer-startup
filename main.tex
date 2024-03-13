@@ -1,0 +1,65 @@
+\RequirePackage[l2tabu,orthodox]{nag}
+
+% TODO: decide if one-sided/two-sided
+%\documentclass[headsepline,footsepline,footinclude=false,fontsize=11pt,paper=a4,listof=totoc,bibliography=totoc,BCOR=12mm,DIV=12]{scrbook} % two-sided % original source stated: BCOR=12mm,DIV=12
+\documentclass[headsepline,footsepline,footinclude=false,oneside,fontsize=11pt,paper=a4,listof=totoc,bibliography=totoc,DIV=12]{scrbook} % one-sided
+
+% TODO: change citation style in settings
+\input{settings}
+
+% TODO: change thesis information
+\newcommand*{\getUniversity}{Technische Universität München}
+\newcommand*{\getFaculty}{Lehrstuhl für Recht und Sicherheit der Digitalisierung}
+\newcommand*{\getTitle}{Thesis title}
+\newcommand*{\getTitleGer}{Rechtliche Prüfung des Geschäftsmodel}
+\newcommand*{\getAuthor}{Thua Duc Nguyen}
+\newcommand*{\getDoctype}{Praxisworkshop Datenschutz für StartUps}
+\newcommand*{\getSupervisor}{Prof.\@~Dr.\@ Dirk Heckmann}
+\newcommand*{\getAdvisor}{ Alexander Besner-Lettenbauer}
+\newcommand*{\getSubmissionDate}{19.03.2024}
+\newcommand*{\getSubmissionLocation}{München}
+
+\begin{document}
+
+% TODO: decide on used language
+\selectlanguage{ngerman}
+%\selectlanguage{english}
+
+% Set page numbering to avoid "destination with the same identifier has been already used" warning for cover page.
+% (see https://en.wikibooks.org/wiki/LaTeX/Hyperlinks#Problems_with_Links_and_Pages).
+\pagenumbering{alph}
+\input{pages/cover}
+
+\frontmatter{}
+
+\input{pages/title}
+%\input{pages/disclaimer}
+%\input{pages/acknowledgements}
+%\input{pages/abstract}
+%\microtypesetup{protrusion=false}
+\tableofcontents{}
+%\microtypesetup{protrusion=true}
+
+\mainmatter{}
+
+\input{chapters/01}
+\input{chapters/02}
+\input{chapters/03}
+\input{chapters/04}
+\input{chapters/05}
+\input{chapters/06}
+
+
+%\appendix{}
+
+% TODO: appendix chapter
+%\input{pages/appendix}
+
+%\microtypesetup{protrusion=false}
+%\listoffigures{}
+%\listoftables{}
+%\microtypesetup{protrusion=true}
+%\printglossaries
+%\printbibliography{}
+
+\end{document}
