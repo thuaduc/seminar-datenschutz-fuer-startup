@@ -25,20 +25,13 @@
 \selectlanguage{ngerman}
 %\selectlanguage{english}
 
-% Set page numbering to avoid "destination with the same identifier has been already used" warning for cover page.
-% (see https://en.wikibooks.org/wiki/LaTeX/Hyperlinks#Problems_with_Links_and_Pages).
 \pagenumbering{alph}
 \input{pages/cover}
 
 \frontmatter{}
 
-\input{pages/title}
-%\input{pages/disclaimer}
-%\input{pages/acknowledgements}
-%\input{pages/abstract}
-%\microtypesetup{protrusion=false}
 \tableofcontents{}
-%\microtypesetup{protrusion=true}
+\input{chapters/00}
 
 \mainmatter{}
 
@@ -48,18 +41,5 @@
 \input{chapters/04}
 \input{chapters/05}
 \input{chapters/06}
-
-
-%\appendix{}
-
-% TODO: appendix chapter
-%\input{pages/appendix}
-
-%\microtypesetup{protrusion=false}
-%\listoffigures{}
-%\listoftables{}
-%\microtypesetup{protrusion=true}
-%\printglossaries
-%\printbibliography{}
 
 \end{document}
