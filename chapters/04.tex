@@ -1,18 +1,17 @@
 \chapter{Rollen und Verantwortlichkeiten in der Datenverarbeitung der Plattform}
 
-%TODO: rewrite this part
-Basierend auf der Struktur DES Projekte und den Anforderungen der DSGVO können folgende Annahmen getroffen werden:
+Im Kontext der DS-GVO wird zwischen dem Verantwortlichen und dem Auftragsverarbeiter unterschieden. Gemäß Art. 28 DS-GVO ist der Verantwortliche die Person oder Stelle, die über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten entscheidet. Der Auftragsverarbeiter hingegen ist eine Person oder Stelle, die personenbezogene Daten im Auftrag des Verantwortlichen verarbeitet.
 
-\begin{enumerate}
-    \item \textbf{Verantwortlicher:}
-    Der Verantwortliche ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten entscheidet. Im Kontext des beschriebenen Projekts wäre dies typischerweise das Unternehmen oder die Organisation, die die Finanzmanagement-Plattform initiiert und betreibt. Sie sind verantwortlich für die Einhaltung der Datenschutzgesetze und müssen sicherstellen, dass alle Verarbeitungstätigkeiten der personenbezogenen Daten im Einklang mit der DSGVO stehen.
-
-    \item \textbf{Auftragsverarbeiter:}
-    Ein Auftragsverarbeiter ist eine natürliche oder juristische Person, die personenbezogene Daten im Auftrag des Verantwortlichen verarbeitet. In der Entwicklung und dem Betrieb einer solchen Plattform könnten externe Dienstleister als Auftragsverarbeiter eingesetzt werden, z.B. für Cloud-Hosting, Datenanalyse, Kundensupport oder Finanzdienstleistungen. Der Einsatz von Auftragsverarbeitern erfordert einen Vertrag oder eine andere rechtliche Grundlage, die den Auftragsverarbeiter zur Einhaltung der DSGVO und zum Schutz der personenbezogenen Daten verpflichtet.
-
-    \item \textbf{Eigene Rolle als Auftragsverarbeiter:}
-    Falls das Unternehmen oder die Organisation, die das Projekt durchführt, personenbezogene Daten im Auftrag eines anderen Unternehmens oder einer anderen Organisation verarbeitet (z.B. wenn es als Anbieter von Finanzmanagement-Lösungen für Banken oder andere Finanzinstitutionen fungiert), würde es selbst als Auftragsverarbeiter agieren. In diesem Fall müsste es die Anforderungen der DSGVO für Auftragsverarbeiter erfüllen, einschließlich der Verarbeitung von Daten gemäß den Anweisungen des Verantwortlichen und der Implementierung angemessener technischer und organisatorischer Maßnahmen zum Schutz der Daten.
-\end{enumerate}
-
-
-Es ist entscheidend, dass die Rollen und Verantwortlichkeiten im Zusammenhang mit der Datenverarbeitung klar definiert und dokumentiert werden, um die Einhaltung der Datenschutzgesetze zu gewährleisten. Die Verantwortlichen müssen auch die Transparenz gegenüber den betroffenen Personen sicherstellen, indem sie sie über die Verarbeitung ihrer Daten, die Identität des Verantwortlichen und gegebenenfalls des Auftragsverarbeiters informieren.
+\begin{itemize}
+    \item \textbf{Wer ist der Verantwortliche?}
+    In Bezug auf das Projekt wäre der Verantwortliche das Unternehmen, die die Plattform betreibt. Dieses Unternehmen entscheidet über die Zwecke (z.B. die Bereitstellung von Dienstleistungen zur Finanzverwaltung) und die Mittel (z.B. die technischen Lösungen und Prozesse) der Datenverarbeitung.
+    
+    \item \textbf{Einsatz von Auftragsverarbeitern}
+    Das Unternehmen könnte zur Unterstützung bestimmter Funktionen der Plattform oder zur Speicherung der Daten Auftragsverarbeiter einsetzen. Beispiele für Auftragsverarbeiter könnten Cloud-Dienstanbieter, Anbieter von Kundenbetreuungssoftware oder Dienstleister für die Datenanalyse sein.
+    
+    \item \textbf{Verantwortung bei Einsatz von Auftragsverarbeitern}
+    Gemäß Art. 28 DS-GVO muss der Verantwortliche sicherstellen, dass Auftragsverarbeiter geeignete technische und organisatorische Maßnahmen ergreifen, um einen Datenschutz gemäß den Anforderungen der DS-GVO zu gewährleisten. Der Verantwortliche und der Auftragsverarbeiter müssen einen Vertrag abschließen, der den Gegenstand und die Dauer der Verarbeitung, die Art und den Zweck der Verarbeitung, die Art der personenbezogenen Daten, die Kategorien betroffener Personen und die Pflichten und Rechte des Verantwortlichen festlegt. 
+    
+    Wichtig ist auch, dass Auftragsverarbeiter nur auf dokumentierte Weisung des Verantwortlichen handeln dürfen und die personenbezogenen Daten nicht für eigene Zwecke verwenden dürfen. Verstößt ein Auftragsverarbeiter gegen diese Vorgaben, indem er über die Zwecke und Mittel der Verarbeitung entscheidet, gilt er gemäß der DS-GVO als Verantwortlicher in Bezug auf diese Verarbeitung. \\
+    
+\end{itemize}
